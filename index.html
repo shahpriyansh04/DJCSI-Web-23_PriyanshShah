@@ -14,7 +14,23 @@
       <div class="w-11/12 text-white">
         <div class="flex justify-between items-center">
           <img src="public/logo.png" alt="Logo" class="h-12 ml-[-10px]" />
-          <div class="flex space-x-8 text-lg">
+          <svg
+            xmlns="<http://www.w3.org/2000/svg>"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+
+          <div class="md:flex space-x-5 hidden items-center text-sm lg:text-lg">
             <a class="cursor-pointer">About</a>
             <a href="#features" class="cursor-pointer">Features</a>
             <a class="cursor-pointer">Integrations</a>
@@ -23,9 +39,20 @@
             <a href="#contact" class="font-bold cursor-pointer">Contact us</a>
           </div>
         </div>
+        <div
+          class="hidden flex text-xl flex-col justify-center items-center space-y-6 mt-6 lg:hidden"
+          id="menu"
+        >
+          <a class="cursor-pointer">About</a>
+          <a href="#features" class="cursor-pointer">Features</a>
+          <a class="cursor-pointer">Integrations</a>
+          <a class="cursor-pointer">Clients</a>
+          <a href="#testimonials" class="cursor-pointer">Testimonials</a>
+          <a href="#contact" class="font-bold cursor-pointer">Contact us</a>
+        </div>
         <div class="mb-48 mt-36">
-          <div class="w-1/3">
-            <p class="leading-normal text-5xl font-bold">
+          <div class="lg:w-1/3 lg:text-left text-center">
+            <p class="leading-normal text-3xl md:text-5xl font-bold">
               The Quicker, Better, Smarter Expense Management Tool
             </p>
             <p class="mt-10 text-md">
@@ -37,7 +64,7 @@
           <img
             src="public/banner.png"
             alt="Banner"
-            class="absolute bottom-0 right-0 h-4/5"
+            class="absolute bottom-0 right-0 h-4/5 hidden lg:inline"
           />
         </div>
       </div>
@@ -49,47 +76,59 @@
           Tons of features
         </p>
         <div
-          class="grid items-center gap-8 justify-items-center mt-24 grid-cols-3"
+          class="grid items-center gap-8 justify-items-center mt-24 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
         >
           <div class="flex flex-col space-y-10">
             <div class="flex items-center space-x-5">
-              <div class="text-right">
+              <img src="public/1.png" alt="1" class="h-10 lg:hidden" />
+
+              <div class="text-left">
                 <p class="font-bold text-md">Budget Multiple Projects</p>
                 <p class="text-gray-600">
                   Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <img src="public/1.png" alt="1" class="h-10" />
+              <img src="public/1.png" alt="1" class="h-10 hidden lg:inline" />
             </div>
             <div class="flex items-center space-x-5">
-              <div class="text-right">
+              <img src="public/2.png" alt="1" class="h-10 lg:hidden" />
+
+              <div class="text-left">
                 <p class="font-bold text-md">Invoice Scan & Auto-Import</p>
                 <p class="text-gray-600">
                   Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <img src="public/2.png" alt="2" class="h-10" />
+              <img src="public/2.png" alt="2" class="h-10 hidden lg:inline" />
             </div>
             <div class="flex items-center space-x-5">
-              <div class="text-right">
+              <img src="public/3.png" alt="3" class="h-10 lg:hidden" />
+
+              <div class="text-left">
                 <p class="font-bold text-md">Inventory Tracker</p>
                 <p class="text-gray-600">
                   Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <img src="public/3.png" alt="3" class="h-10" />
+              <img src="public/3.png" alt="3" class="h-10 hidden lg:inline" />
             </div>
             <div class="flex items-center space-x-5">
-              <div class="text-right">
+              <img src="public/4.png" alt="4" class="h-10 lg:hidden" />
+
+              <div class="text-left">
                 <p class="font-bold text-md">Approval System with Levels</p>
                 <p class="text-gray-600">
                   Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <img src="public/4.png" alt="4" class="h-10" />
+              <img src="public/4.png" alt="4" class="h-10 hidden lg:inline" />
             </div>
           </div>
-          <img src="public/phone.png" alt="Phone" class="h-4/5" />
+          <img
+            src="public/phone.png"
+            alt="Phone"
+            class="h-4/5 hidden xl:inline"
+          />
           <div class="flex flex-col space-y-10">
             <div class="flex items-center space-x-5">
               <img src="public/5.png" alt="1" class="h-10" />
@@ -138,7 +177,9 @@
       <p class="text-[#1C2235] text-center font-bold text-4xl">
         Read Our Rave Reviews
       </p>
-      <div class="grid gap-3 grid-cols-3 justify-items-center mt-12">
+      <div
+        class="grid gap-12 lg:gap-3 grid-cols-1 lg:grid-cols-3 justify-items-center mt-12"
+      >
         <div class="flex flex-col justify-center items-center">
           <img
             src="public/prof1.png"
@@ -207,7 +248,9 @@
 
     <section class="bg-[#4019b2] py-24" id="contact">
       <div class="flex flex-col justify-center items-center text-white">
-        <p class="text-4xl font-bold">Ready to Simplify your Finances?</p>
+        <p class="text-xl sm:text-4xl font-bold">
+          Ready to Simplify your Finances?
+        </p>
         <div class="flex space-x-16 mt-8">
           <div class="flex items-center space-x-1">
             <img src="public/mail.png" alt="Email" class="h-4 mt-1" />
@@ -220,5 +263,13 @@
         </div>
       </div>
     </section>
+    <script>
+      const button = document.querySelector("#menu-button"); // Hamburger Icon
+      const menu = document.querySelector("#menu"); // Menu
+
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
